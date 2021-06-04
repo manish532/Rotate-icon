@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        [data-toggle="collapse"][aria-expanded="true"] > .js-rotate-if-collapsed
+        {
+            -webkit-transform: rotate(90deg);
+            -moz-transform:    rotate(90deg);
+            -ms-transform:     rotate(90deg);
+            -o-transform:      rotate(90deg);
+            transform:         rotate(90deg);
+        }
+    </style>
+
+</head>
+<body>
+ <div class="container my-5">
+    <h3 class="bg-primary text-center p-3">click on icon for rotate</h3>
+    <div style="cursor: pointer"  data-toggle="collapse" data-target="#collapseExample" aria-expanded="false">
+        Header&nbsp;&nbsp;
+        <span class="glyphicon glyphicon-menu-down js-rotate-if-collapsed"></span>
+    </div>
+    <div class="bg-info" id="collapseExample" class="collapse">
+        Body
+    </div>
+
+    <hr>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>
